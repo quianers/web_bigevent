@@ -1,0 +1,59 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/assets/images/login_bg.jpg') no-repeat center;
+    /* cover图像将被调整大小以适应容器。如果长宽比不一样，那么图像将被屏蔽以适应 */
+    /* contain图像将被调整大小以适应容器。如果长宽比不对，那么图像就会被黑边化 */
+    background-size: cover;
+}
+
+.loginAndRegBox {
+    width: 400px;
+    height: 310px;
+    background-color: white;
+    /* 水平垂直居中 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-box {
+    height: 60px;
+    background: url('/assets/images/login_title.png') no-repeat center;
+}
+
+/* 登陆注册按需切换 */
+.reg-box {
+    display: none;
+}
+
+/* 美化登陆表单样式 */
+.layui-form {
+    padding: 0 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links a {
+    font-size: 12px;
+}
+/* 绘制文本框前面的小图标 */
+.layui-form-item {
+    /* 子绝父相 */
+    position: relative;
+}
+.layui-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.layui-input{
+    padding-left: 32px;
+}
