@@ -16,6 +16,7 @@ $(function () {
     var form = layui.form
     // 从 layui 中获取 layer 对象 弹出层
     var layer = layui.layer
+
     // 通过 form.verify() 函数自定义校验规则
     form.verify({
         // 自定义了一个叫做 pwd 校验规则
@@ -55,6 +56,7 @@ $(function () {
             $('#link_login').click()
         })
     })
+    
     // 监听登录表单的提交事件
     $('#form_login').submit(function (e) {
         // 1.阻止默认提交行为

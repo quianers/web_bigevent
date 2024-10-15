@@ -11,6 +11,7 @@ $(function () {
       }
     }
   })
+
   // 调用initUserInfo()函数，获取初始化用户的基本信息
   initUserInfo()
 
@@ -31,7 +32,7 @@ $(function () {
     })
   }
 
-  // 重置表单的数据
+  // 重置表单的数据【重置是指：修改了但是又不想改了，回到最初用户信息的状态】
   $('#btnReset').on('click', function(e) {
     // 阻止表单的默认重置行为
     e.preventDefault()

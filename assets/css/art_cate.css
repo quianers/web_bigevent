@@ -1,0 +1,25 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #f2f3f5;
+}
+
+.layui-card-header {
+    /* 给父元素添加flex属性  子元素:span和button */
+    display: flex;
+    /* 设置主轴上子元素的排列方式 */
+    justify-content: space-between;
+    /* 设置侧轴上子元素的排列方式（单行） */
+    align-items: center;
+}
+
+#form-add,
+#form-edit {
+    padding-top: 20px;
+    padding-right: 30px;
+}

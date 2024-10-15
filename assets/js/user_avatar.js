@@ -14,14 +14,14 @@ $(function () {
     // 1.3 创建裁剪区域
     $image.cropper(options)
 
+    // 为上传按钮绑定点击事件
     $('#btnChooseImage').on('click', function () {
         // 模拟手动点击事件
         // .click()是jquery中的自触发事件，与.triggle('click')功能一样，会触发元素默认行为
         // .triggleHandle('click')不会触发元素的默认行为
         $('#file').click()
     })
-
-    // 为文件选择框绑定 change 事件
+    // 为 文件选择框 绑定 change 事件
     $('#file').on('change', function (e) {
         // console.log(e)
         // 获取用户选择的文件
@@ -41,7 +41,7 @@ $(function () {
             .cropper(options) // 重新初始化裁剪区域
     })
 
-    // 为确定按钮，绑定点击事件
+    // 为确定按钮绑定点击事件
     $('#btnUpload').on('click', function () {
         // 1. 要拿到用户裁剪之后的头像
         var dataURL = $image
