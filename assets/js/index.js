@@ -37,7 +37,7 @@ function getUserInfo() {
             }
             // 调用 renderAvatar 渲染用户的头像
             renderAvatar(res.data)
-        },
+        } 
         // ⭐不论成功还是失败，最终都会调用 complete 回调函数
         // complete: function (res) {
         //     // console.log('执行了 complete 回调：')
